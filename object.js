@@ -20,13 +20,22 @@ delete student.roll;
 console.log(student)
 
 // method of object
-let students ={
+const students ={
     name:"lucky",
     age:"20",
     course:"bca"
+} 
+const b={
+    city:"jamshedpur"
 }
-console.log(Object.entries(students))
-
+console.log(Object.keys(students));
+console.log(Object.values(students));
+console.log(Object.assign(students,b));
+console.log(Object.fromEntries(Object.entries(students)));
+console.log(Object.freeze(students));
+console.log(Object.seal(students));
+// console.log(Object.defineProperties());
+console.log(Object.hasOwn(students,"name"));
 //propeties of object
 
 let object ={
